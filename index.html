@@ -326,7 +326,7 @@ map.addSource('bafhubs', {
                 'id': 'distro',
                 'type': 'fill',
                 'source': 'distros',
-                'source-layer': 'BAF_Rep_Locator',
+                'source-layer': 'BAF_Rep_Locator_2024-08-05',
                 'paint': {
                     'fill-outline-color': 'rgba(0,0,0,1)',
                     'fill-color': 'rgba(250,218,94,0.5)'
@@ -342,7 +342,7 @@ map.addSource('bafhubs', {
                 'id': 'distro-highlighted',
                 'type': 'fill',
                 'source': 'distros',
-                'source-layer': 'BAF_Rep_Locator',
+                'source-layer': 'BAF_Rep_Locator_2024-08-05',
                 'paint': {
                     'fill-outline-color': 'rgba(0,0,0,1)',
                     'fill-color': 'rgba(250,218,94,0.85)'
@@ -366,7 +366,7 @@ map.addSource('bafhubs', {
             // Use filter to collect only results
             // with the same county name.
             const relatedDistros = map.querySourceFeatures('distros', {
-                sourceLayer: 'BAF_Rep_Locator',
+                sourceLayer: 'BAF_Rep_Locator_2024-08-05',
                 filter: ['in', 'DistHub', feature.properties.DistHub]
             });
 
