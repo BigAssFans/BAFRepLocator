@@ -44,7 +44,7 @@ body { margin: 0; padding: 0; }
         margin-left: -25%;
         top: 10px;
     }
-    .mapboxgl-ctrl-geocoder { 
+    .mapboxgl-ctrl-geocoder {
         min-width: 100%;
     }
     #map {
@@ -115,7 +115,7 @@ body { margin: 0; padding: 0; }
     );*/
 
 /*for (const feature of bafmarkers.features) {
-  // create a HTML element for each feature //
+  // create a HTML element for each feature
   const el = document.createElement('div');
   el.className = 'marker';
 
@@ -178,7 +178,7 @@ geocoder.clear();
 				new mapboxgl.Popup({ className: "geo-popup" })
             	    .setLngLat(e.result.center)
 					  .setHTML(`<h4>Your Big Ass Rep is:</h4><div style="font-size: 1.3em;">Big Ass Fans</div><div><a href="https://bigassfans.com/" target=_blank>Visit Website</a><br><br>
-					  			<div style="font-weight: 550">BAF Account Manager: </div><span style="font-size: 1.1em">${searched[0].properties.AcctMgr} </span>(859)629-7578<br><a href="mailto:${searched[0].properties.BAFEmail}">${searched[0].properties.BAFEmail}</a>`)
+					  			<div style="font-weight: 550">BAF Account Manager: </div><span style="font-size: 1.1em">${searched[0].properties.AcctMgr} </span>${searched[0].properties.AcctMgrPhn}<br><a href="mailto:${searched[0].properties.BAFEmail}">${searched[0].properties.BAFEmail}</a>`)
 					.addTo(map);
 			} else {
 				new mapboxgl.Popup({ className: "geo-popup" })
@@ -460,7 +460,7 @@ map.addSource('bafhubs', {
 	            new mapboxgl.Popup({ className: "geo-popup" })
 	                .setLngLat(e.lngLat)
 							.setHTML(`<h4>Your Big Ass Rep is:</h4><div style="font-size: 1.3em;">Big Ass Fans</div><div><a href="https://bigassfans.com/" target=_blank>Visit Website</a><br><br>
-					  			<div style="font-weight: 550">BAF Account Manager: </div><span style="font-size: 1.1em">${clickFeatures[0].properties.AcctMgr} </span>(859)629-7578<br><a href="mailto:${clickFeatures[0].properties.BAFEmail}">${clickFeatures[0].properties.BAFEmail}</a>`)
+					  			<div style="font-weight: 550">BAF Account Manager: </div><span style="font-size: 1.1em">${clickFeatures[0].properties.AcctMgr} </span>${clickFeatures[0].properties.AcctMgrPhn}<br><a href="mailto:${clickFeatures[0].properties.BAFEmail}">${clickFeatures[0].properties.BAFEmail}</a>`)
 //					  }
 	//				  .setHTML('<h4>Your Big Ass Rep is:</h4><h3>'+${searched[0].properties.DistHub}+'</h3>')
 	//                .setHTML('<p style="text-align:center"><h4>Your Big Ass Rep is:</h4></p><p style="text-align:center"><h3>${searched[0].properties.DistHub}</h3>
